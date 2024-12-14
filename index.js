@@ -111,13 +111,7 @@ burgerBtn.addEventListener('click', function () {
 const container = document.querySelector('.container');
 container.appendChild(orderContainer); // Appends the order container below the menu
 const body = document.getElementById('body');
-body.addEventListener('dblclick', function(e){
-    if(orderContainer.style.display != 'none'){
-        orderContainer.style.display = "none"
-        orderList.innerHTML = "";
-        currentAmount = 0;
-    }
-})
+
 const paymentContainer = document.getElementById('payment');
 const payBtn = document.getElementById('submit-button');
 const overlay = document.querySelector('.overlay');
@@ -151,4 +145,11 @@ payBtn.addEventListener('click', function(e){
     orderContainer.innerHTML = finalMessage;
     
 });
+body.addEventListener('dblclick', function(e){
+    if(orderContainer.style.display != 'none'){
+        orderContainer.style.display = "none"
+        orderList.innerHTML = "";
+        currentAmount = 0;
+    }
+})
 
