@@ -55,10 +55,10 @@ let currentAmount = 0;
 pizzaBtn.addEventListener('click', function () {
     orderContainer.style.display = 'block'; // Show the container
     currentAmount += menuArray[0].price; // Update the total price
-    totalPriceDiv.textContent = Total price: $${currentAmount} // Update total price display
+    totalPriceDiv.textContent = `Total price: $${currentAmount}` // Update total price display
     
     const pizzaItem = document.createElement('li');
-    pizzaItem.textContent = ${menuArray[0].name}  $${menuArray[0].price};
+    pizzaItem.textContent = `${menuArray[0].name}  $${menuArray[0].price}`;
     orderList.appendChild(pizzaItem);
         const removeBtn = document.createElement('button');
         removeBtn.classList.add('remove');
@@ -67,7 +67,7 @@ pizzaBtn.addEventListener('click', function () {
     removeBtn.addEventListener('click', function(){
         pizzaItem.remove();
         removeBtn.remove();
-        totalPriceDiv.textContent = Total price:$${currentAmount -= 14}
+        totalPriceDiv.textContent = `Total price:$${currentAmount -= 14}`
         
     })
 });
@@ -75,9 +75,9 @@ pizzaBtn.addEventListener('click', function () {
 beerBtn.addEventListener('click', function () {
     orderContainer.style.display = 'block'; // Show the container
     currentAmount += menuArray[2].price; // Update the total price
-    totalPriceDiv.textContent = Total price: $${currentAmount} // Update total price display
+    totalPriceDiv.textContent = `Total price: $${currentAmount}` // Update total price display
     const beerItem = document.createElement('li');
-    beerItem.textContent = ${menuArray[2].name}  $${menuArray[2].price};
+    beerItem.textContent = `${menuArray[2].name}  $${menuArray[2].price}`;
     orderList.appendChild(beerItem);
     const removeBtn = document.createElement('button');
     removeBtn.classList.add('remove');
@@ -86,16 +86,16 @@ beerBtn.addEventListener('click', function () {
     removeBtn.addEventListener("click", function(){
         beerItem.remove();
         removeBtn.remove();
-        totalPriceDiv.textContent = Total price: $${currentAmount -= 12}
+        totalPriceDiv.textContent = `Total price: $${currentAmount -= 12}`
     })
 });
 
 burgerBtn.addEventListener('click', function () {
     orderContainer.style.display = 'block'; // Show the container
     currentAmount += menuArray[1].price; // Update the total price
-    totalPriceDiv.textContent = Total price: $${currentAmount} // Update total price display
+    totalPriceDiv.textContent = `Total price: $${currentAmount}` // Update total price display
     const burgerItem = document.createElement('li');
-    burgerItem.textContent = ${menuArray[1].name} $${menuArray[1].price};
+    burgerItem.textContent = `${menuArray[1].name} $${menuArray[1].price}`;
     orderList.appendChild(burgerItem);
     const removeBtn = document.createElement('button');
     removeBtn.classList.add('remove');
@@ -104,7 +104,7 @@ burgerBtn.addEventListener('click', function () {
     removeBtn.addEventListener('click', function(){
         burgerItem.remove();
         removeBtn.remove();
-        totalPriceDiv.textContent =Total price: $${currentAmount -= 12};
+        totalPriceDiv.textContent =`Total price: $${currentAmount -= 12}`;
     })
 });
 
@@ -142,10 +142,8 @@ payBtn.addEventListener('click', function(e){
    }
     e.preventDefault()
     const userName = document.getElementById('name').value
-    const finalMessage = <div id="message"> Thank you ${userName}, you order is on its way
-    orderContainer.style.display = 'none'
-    finalMessage.style.display = 'flex'
-    
+    orderContainer.innerHTML = finalMessage;
+    const finalMessage = `<div id="message"> Thank you ${userName}, you order is on its way </div>`
 });
   
 
