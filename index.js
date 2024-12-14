@@ -140,7 +140,6 @@ payBtn.addEventListener('click', function(e){
         overlay.style.display = 'none'
         paymentContainer.style.display = 'none'
    }
-    e.preventDefault()
     const userName = document.getElementById('name').value
     const finalMessage = `<div id="message"> Thank you ${userName}, 
                             you order is on its way </div>`
