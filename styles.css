@@ -173,6 +173,7 @@ button:hover{
 }
 
 #message{
+    margin: 0 auto;
     width: 504px;
     height: 120px;
     background-color: #ECFDF5;
