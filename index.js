@@ -120,6 +120,13 @@ completeOrderBtn.addEventListener('click', function(){
     paymentContainer.style.display = 'flex'
     overlay.style.display = 'block'
 })
+body.addEventListener('click', function(){
+        if(orderContainer.style.display != 'none'){
+        orderContainer.style.display = "none"
+        orderList.innerHTML = "";
+        currentAmount = 0;
+    }
+})
 
 
 
@@ -145,14 +152,6 @@ payBtn.addEventListener('click', function(e){
     orderContainer.innerHTML = finalMessage;
     
 });
-  
-body.addEventListener('click', function(){
-        if(orderContainer.style.display != 'none'){
-        orderContainer.style.display = "none"
-        orderList.innerHTML = "";
-        currentAmount = 0;
-        orderContainer.innerHTML = '';
-    }
-})
+
   
 
