@@ -142,7 +142,9 @@ payBtn.addEventListener('click', function(e){
    }
     e.preventDefault()
     const userName = document.getElementById('name').value
-    orderContainer.innerHTML = finalMessage;
     const finalMessage = `<div id="message"> Thank you ${userName}, you order is on its way`
+    orderContainer.style.display = 'none'
+    finalMessage.style.display = 'flex'
+    
 });
 
