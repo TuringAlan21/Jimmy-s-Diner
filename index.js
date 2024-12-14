@@ -142,7 +142,8 @@ payBtn.addEventListener('click', function(e){
    }
     e.preventDefault()
     const userName = document.getElementById('name').value
-    const finalMessage = `<div id="message"> Thank you ${userName}, you order is on its way </div>`
+    const finalMessage = `<div id="message"> Thank you ${userName}, 
+                            you order is on its way </div>`
     orderContainer.style.display = 'block'
     orderContainer.innerHTML = finalMessage;
     
