@@ -118,7 +118,7 @@ body.addEventListener('dblclick', function(e){
         currentAmount = 0;
     }
 })
-const paymentContainer = document.getElementById('payment');
+const paymentContainer = document.getElementById('payment').style.display = 'none';
 const payBtn = document.getElementById('submit-button');
 const overlay = document.querySelector('.overlay');
 
