@@ -173,6 +173,7 @@ button:hover{
 }
 
 #message{
+    align-self:center;
     align-items:center;
     justify-content:center;
     display: flex;
