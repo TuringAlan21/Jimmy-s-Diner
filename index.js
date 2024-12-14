@@ -136,7 +136,7 @@ document.getElementById('close-btn').addEventListener('click', function(){
 })
 paymentContainer.style.display = 'none'
 
-payBtn.addEventListener('click', function(e){
+payBtn.addEventListener('dblclick', function(e){
    if(paymentContainer.style.display != 'none'){
         overlay.style.display = 'none'
         paymentContainer.style.display = 'none'
