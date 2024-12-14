@@ -173,6 +173,10 @@ button:hover{
 }
 
 #message{
+    font-size:large;
+    display:flex;
+    font-weight:bold;
+    text-align:center;
     margin: 0 auto;
     width: 504px;
     height: 120px;
