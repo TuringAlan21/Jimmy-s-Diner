@@ -145,11 +145,16 @@ payBtn.addEventListener('click', function(e){
     orderContainer.innerHTML = finalMessage;
     
 });
-body.addEventListener('dblclick', function(e){
-    if(orderContainer.style.display != 'none'){
+
+function clearContainer(){
+      if(orderContainer.style.display != 'none'){
         orderContainer.style.display = "none"
         orderList.innerHTML = "";
         currentAmount = 0;
+          orderContainer.innerHTML = '';
     }
-})
+)
+}   
+body.addEventListener('dblclick', clearContaier();
+  
 
