@@ -139,7 +139,10 @@ payBtn.addEventListener('click', function(e){
    if(paymentContainer.style.display != 'none'){
         overlay.style.display = 'none'
         paymentContainer.style.display = 'none'
-   }
+   }else if(!paymentContainer.checkValidity()){
+       paymentContainer.reportValidity();
+       return;
+   } 
     e.preventDefault();
     const userName = document.getElementById('name').value
     const finalMessage = `<div id="message"> Thank you ${userName}, 
