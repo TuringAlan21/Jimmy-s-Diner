@@ -1,0 +1,203 @@
+body{
+    display: flex;
+    margin: 0;
+    overflow: visible;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header{
+    width:600px;
+    height:161px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1161px;
+    width: 600px;
+    border: black 5px solid;
+}
+.section {
+    display: flex;
+    justify-content: space-between; /* Push items to the edges */
+    align-items: center; /* Vertically align items */
+    width: 508px;
+    height: 140px;
+    margin-top: 40px;
+    border-bottom: solid 1px grey;
+}
+
+
+.icon{
+    font-size: 70px;
+}
+
+.typography{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.title{
+    font-size: large;
+}
+
+.title, .price{
+    font-weight: bold;
+}
+.desc{
+    opacity: 50%;
+}
+
+.add-btn{
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    background-color: white;
+    border: grey 1px solid;
+}
+h2{
+    position: absolute;
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    align-self: center;
+}
+#card-details{
+    color: black;
+}
+
+    #order-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 1161px;
+        width: 600px;
+        border: black 5px solid;
+        position: relative; /* Allows child elements to use absolute positioning */
+        margin-bottom: 20px;
+    }
+
+
+button:hover{
+    cursor: pointer;
+}
+
+#complete-order{
+    color: white;
+    border:none;
+    width: 508px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #16DB99;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    margin-top: 10px;
+}
+
+#complete-order:hover{
+    background-color: lightgreen;
+}
+
+#total-price{
+    margin-left: 50px;
+}
+
+.remove{
+    background-color: transparent;
+    border: none;
+    color: grey;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 80%;
+}
+
+.payment{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 524px;
+    min-height: 542px; /* Allow it to grow if content overflows */
+    background-color: white;
+    z-index: 30;
+    padding: 20px; /* Internal spacing for clean look */
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+
+.input-field, .payBtn{
+    width: 475.91px;
+    height: 71.3px;
+    margin: auto;
+}
+
+.payBtn{
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: x-large;
+}
+
+.input-field{
+    /* margin-bottom: -20px; */
+    margin-bottom: 15px; /* Adjust for spacing between fields */
+    padding: 10px; /* Add internal spacing */
+    box-sizing: border-box;
+    width: 100%; /* Match parent container width */
+    height: 50px; /* Standardize height */
+    margin-bottom: 15px; /* Space between inputs */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#close-btn{
+    color: red;
+    font-size:x-large;
+    position: absolute;
+    margin-left: 92%;
+    margin-bottom: 95%;
+    background-color: transparent;
+    border: none;
+}
+
+#message{
+    display: flex;
+    text-align: center;
+    width: 504px;
+    height: 120px;
+    background-color: #ECFDF5;
+    color: #065F46;
+}
+.overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    z-index: 10;
+}
+#remove-btn{
+    margin-left: 100px;
+}
+
+
+
+
+
+
+
+

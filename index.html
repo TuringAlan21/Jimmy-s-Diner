@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy's Diner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="body">
+    <div class="container" id="container-id">
+        <header class="header" id="header">
+            <img class="header-image" src="/header.jpg">
+        </header>
+
+
+        <section class="section" id="pizza-section">
+            <div class="icon">🍕</div>
+            <div class="typography">
+                <p class="title">Pizza</p>
+                <p class="desc">Pepperoni, Mushroom, Mozarella</p>
+                <p class="price">$14</p>
+            </div>
+            <button class="add-btn" id="add-pizza">+</button>
+        </section>
+
+
+        <section class="section" id="burger-section">
+            <div class="icon">🍔</div>
+            <div class="typography">
+                <p class="title">Hamburger</p>
+                <p class="desc">Beef, Cheese, Lettuce</p>
+                <p class="price">$12</p>
+            </div>
+            <button class="add-btn" id="add-hamburger">+</button>
+        </section>
+
+
+        <section class="section" id="beer-section">
+            <div class="icon">🍺</div>
+            <div class="typography">
+                <p class="title">Beer</p>
+                <p class="desc">Grain, Hops, Yeast, Water</p>
+                <p class="price">$12</p>
+            </div>
+            <button class="add-btn" id="add-beer">+</button>
+        </section>
+    </div>
+
+        <form class="payment" id="payment">
+            <button class="close" id="close-btn">X</button>
+            <h2 id="card-details">Enter Card Details</h2>
+            <input class="input-field" type="text" id="name" name="name" placeholder="Enter your name"  pattern="[a-zA-Z]+" required>
+            <input class="input-field" type="number" id="card-number" name="card-number" placeholder="Enter card number" pattern="[0-9]+" required>
+            <input class="input-field" type="number" id="cvv" name="cvv" placeholder="Enter CVV" pattern="\d{3}|\d{4}" maxlength=4 required>
+            <button class="payBtn" type="submit" id="submit-button">Pay</button>
+        </form>
+        <div class="overlay"></div>
+        <div class="message" id="message"></div>
+
+
+</body>
+<script type="module" src="/index.js"></script>
+</html>
