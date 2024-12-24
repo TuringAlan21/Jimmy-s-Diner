@@ -1,5 +1,6 @@
 body{
     display: flex;
+    margin-top: 10px;
     overflow: visible;
     height: 100vh;
     flex-direction: column;
